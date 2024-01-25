@@ -1,6 +1,7 @@
 import styles from './Header.module.scss';
 import TituloComImagem from './TituloComImagem';
 import TituloSemImagem from './TituloSemImagem';
+import PropTypes from 'prop-types';
 
 export default function Header({ titulo, descricao, className = '', imagem, children }) {
   return (
@@ -9,7 +10,7 @@ export default function Header({ titulo, descricao, className = '', imagem, chil
         <TituloSemImagem
           titulo={titulo}
           descricao={descricao}
-        />
+        >{children}</TituloSemImagem>
       }
       {titulo && imagem &&
         <TituloComImagem
@@ -17,8 +18,16 @@ export default function Header({ titulo, descricao, className = '', imagem, chil
           descricao={descricao}
           imagem={imagem}
           className={className}
-        />
+        >{children}</TituloComImagem>
       }
     </header>
   )
 }
+
+Header.propTypes = {
+  titulo: PropTypes.string,
+  descricao: PropTypes.string,
+  className: PropTypes.string,
+  imagem: PropTypes.string,
+  children: PropTypes.node,
+};
