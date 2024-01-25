@@ -1,7 +1,7 @@
-import PaginaPadrao from 'components/PaginaPadrao';
-import Carrinho from 'pages/Carrinho';
-import Categoria from 'pages/Categoria';
-import Home from 'pages/Home';
+import PaginaPadrao from './components/PaginaPadrao';
+import Carrinho from './pages/Carrinho';
+import Categoria from './pages/Categoria';
+import Home from './pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Anuncie from './pages/Anuncie';
 

@@ -1,5 +1,5 @@
 import store from './store';
-import Router from 'routes';
+import Router from './routes';
 import { Provider } from 'react-redux';
 
 function App() {

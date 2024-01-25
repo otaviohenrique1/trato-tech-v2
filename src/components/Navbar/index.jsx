@@ -1,5 +1,6 @@
 import styles from './Navbar.module.scss';
-import { ReactComponent as Logo } from '../../assets/logo.svg';
+// import { ReactComponent as Logo } from '../../assets/logo.svg';
+import Logo from '../../assets/logo.svg';
 import classNames from 'classnames';
 import {
   RiShoppingCart2Line,
@@ -18,7 +19,8 @@ export default function Navbar() {
   const navigate = useNavigate();
   return (
     <nav className={styles.nav}>
-      <Logo className={styles.logo} onClick={() => navigate('/')} />
+      {/* <Logo className={styles.logo} onClick={() => navigate('/')} /> */}
+      <img src={Logo} alt="Logo da pagina"  className={styles.logo} onClick={() => navigate('/')} />
       <div className={styles.links}>
         <div>
           <Link to='/' className={classNames(styles.link, {
