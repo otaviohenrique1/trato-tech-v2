@@ -18,15 +18,17 @@
   flex: 1;
   width: 70%;
 
-  input, select {
+  input,
+  select {
     border: none;
     border-radius: 5px;
     font-size: 20px;
     outline: #1a95f0;
     transition: .2s ease-in-out;
     padding: 10px 20px;
-    &:focus{
+
+    &:focus {
       outline: 2px solid #1a95f0;
     }
-}
+  }
 }

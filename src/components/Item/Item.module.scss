@@ -6,6 +6,7 @@
   flex-direction: column;
   overflow: hidden;
   width: 335px;
+
   &-descricao {
     background-color: #EFF9FF;
     display: flex;
@@ -13,12 +14,15 @@
     justify-content: space-between;
     flex: 1;
   }
+
   &-titulo {
     padding: 16px 16px 0 16px;
+
     h2 {
       color: #1875E8;
       font-size: 20px;
     }
+
     p {
       color: #444;
     }
@@ -28,6 +32,7 @@
     height: 160px;
     width: 335px;
     margin: 0 auto;
+
     img {
       // height: 100%;
       width: 100%;
@@ -49,6 +54,7 @@
     justify-content: center;
     width: 170px;
   }
+
   &-acoes {
     align-items: center;
     display: flex;
@@ -72,15 +78,18 @@
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
+
   .quantidade {
     align-items: center;
     display: flex;
     gap: 10px;
     justify-content: center;
+
     svg {
       cursor: pointer;
     }
   }
+
   .item-acoes {
     gap: 50px;
     justify-content: flex-end;
