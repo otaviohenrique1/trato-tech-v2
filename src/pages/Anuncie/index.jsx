@@ -4,7 +4,7 @@ import styles from './Anuncie.module.scss';
 import Button from "../../components/Button";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
-import { cadastrarFavorito } from "../../store/reducers/itens";
+import { cadastrarItem } from "../../store/reducers/itens";
 import Input from "../../components/Input";
 
 export default function Anuncie() {
@@ -19,7 +19,7 @@ export default function Anuncie() {
   });
 
   function cadastrar(data) {
-    dispatch(cadastrarFavorito(data));
+    dispatch(cadastrarItem(data));
   }
 
   return (
